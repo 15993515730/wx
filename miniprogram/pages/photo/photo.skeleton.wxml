@@ -1,0 +1,76 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/11/4 下午7:37:56 
+使用方法：
+在 C:\Users\Administrator\Desktop\cloudFile\miniprogram\pages\photo\photo.wxml 引入模板
+
+```
+<import src="photo.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\Administrator\Desktop\cloudFile\miniprogram\pages\photo\photo.wxss 中引入样式
+```
+@import "./photo.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view is="components/tel/tel">
+      <view id="app">
+        <view class="tel--header">
+          <view class="tel--ecook_logo">
+            <view class="tel--logo">
+              <image class="tel--cook-img sk-image"></image>
+              <text class="tel--net-cook sk-transparent sk-text-30-0000-722 sk-text">网上厨房</text>
+            </view>
+          </view>
+          <view class="tel--search">
+            <view class="tel--search_content">
+              <image class="tel--search-img sk-image"></image>
+            </view>
+            <view class="tel--search_input sk-image" placeholder="搜菜谱，食材" type="text" value="true"></view>
+            <text class="tel--search_button sk-transparent sk-text-31-9444-532 sk-text" style="background-position-x: 50%;">搜索</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="all">
+      <view class="recipe_banner">
+        <image mode="true" class="recipe_banner_img sk-image"></image>
+      </view>
+      <view class="main">
+        <view class="recipe_detail_content">
+          <view class="title_h1 font22 mtop0 sk-transparent sk-text-0-0000-861 sk-text"> 山药炒肉片</view>
+          <view class="recipe_desc font14 sk-transparent sk-text-15-0000-620 sk-text">山药炒肉片是一道美味可口的家常菜，有助于增强人体免疫力，补虚养身、滋阴等效果，适合脾肾虚弱者食用。</view>
+          <view class="recipe_author_content">
+            <navigator class="disinline">
+              <image class="recipe_author_img sk-image"></image>
+            </navigator>
+            <view class="recipe_author_name_content">
+              <view class="font16 recipe_author_name">
+                <navigator class="sk-transparent sk-text-13-6364-168 sk-text">飞翔的鸟</navigator>
+              </view>
+              <view class="recipe_author_sex">
+                <image class="recipe_author_sex_img sk-image"></image>
+              </view>
+            </view>
+            <view class="recipe_author_care sk-transparent sk-text-25-0000-813 sk-text" style="background-position-x: 50%;">+关注</view>
+          </view>
+          <view class="recipe_species">
+            <view class="species">
+              <view class="font18 species_num sk-transparent sk-text-14-0000-198 sk-text" style="background-position-x: 50%;">211</view>
+            </view>
+            <view class="species">
+              <view class="font18 species_num sk-transparent sk-text-14-0000-70 sk-text" style="background-position-x: 50%;">200</view>
+            </view>
+            <view class="species">
+              <view class="font18 species_num sk-transparent sk-text-14-0000-140 sk-text" style="background-position-x: 50%;">525</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

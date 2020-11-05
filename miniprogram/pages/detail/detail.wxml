@@ -1,0 +1,88 @@
+<!--pages/detail/detail.wxml-->
+<tel></tel>
+<view class="all">
+  <view class="recipe_banner">
+        <image class="recipe_banner_img" src="{{lists[0].img}}" alt=""></image>
+    </view>
+    <view class="main">
+      <view class="recipe_detail_content">
+            <view class="title_h1 font22 mtop0"> {{lists[0].title}}</view>
+            <view class="recipe_desc font14">非常的美味哟。</view>
+            <view class="recipe_author_content">
+                <navigator class="disinline">
+                    <image class="recipe_author_img" src="{{lists[0].img1}}"></image></navigator>
+                <view class="recipe_author_name_content">
+                    <view class="font16 recipe_author_name"><navigator>{{lists[0].name}}</navigator></view>
+                    <view class="recipe_author_sex">
+                        <image alt="" src="{{lists[0].sex}}" class="recipe_author_sex_img"></image>
+                    </view>
+                  </view>
+                <view class="recipe_author_care">+关注</view>
+                </view>
+            <view class="recipe_species">
+                <view class="species">
+                    <view class="font18 species_num">{{lists[0].menu}}</view>
+                    <view class="font14 species_text">菜谱</view>
+                </view>
+
+                <view class="species">
+                    <view class="font18 species_num">{{lists[0].fans}}</view>
+                    <view class="font14">粉丝</view>
+                </view>
+                <view class="species">
+                    <view class="font18 species_num">{{lists[0].foucs}}</view>
+                    <view class="font14">关注</view>
+                </view>
+              </view>
+    </view>
+    <view class="titleview font16">食材</view>
+            <view class="material">
+                <view class="material_ul">
+                    
+                        <view class="material_li"><text class="material_left" title="面粉">面粉</text> <text class="material_right">500克</text></view>
+                    
+                    
+                        <view class="materialview material_l"><text class="material_left" title="猪肉">猪肉</text> <text class="material_right">400克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="皮冻">皮冻</text> <text class="material_right">120克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="洋葱">洋葱</text> <text class="material_right">60克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="花椒">花椒</text> <text class="material_right">一小撮</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="生姜">生姜</text> <text class="material_right">10克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="大葱">大葱</text> <text class="material_right">60克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="白糖">白糖</text> <text class="material_right">5克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="蚝油">蚝油</text> <text class="material_right">10克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="老抽">老抽</text> <text class="material_right">5克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="生抽">生抽</text> <text class="material_right">15克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="香油">香油</text> <text class="material_right">10克</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="盐">盐</text> <text class="material_right">适量</text></view>
+                    
+                    
+                        <view class="material_li"><text class="material_left" title="油">油</text> <text class="material_right">适量</text></view>
+                    
+                </view>
+              </view>
+            <view>
+</view>
+</view>
+</view>

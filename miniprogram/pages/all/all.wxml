@@ -1,0 +1,58 @@
+<!--pages/all/all.wxml-->
+<tel></tel>
+<view class="all">
+  <view class="all_article_header">
+      <view class="all_article_header_top">
+        <view class="all_article_header_top_nav">
+          <view class="top">
+            <navigator url="../index/index" >首页</navigator>
+          </view>
+          <view class="top"><pre> > </pre></view>
+          <view class="top"><navigator url="../index/index">菜谱大全</navigator></view>
+          <view class="top"><pre> ></pre></view>
+          <view class="top" style="color: #ffc000">{{ title1}}</view>
+        </view>
+      </view>
+      <view class="all_article_header_card">
+        <view class="all_header_card_h1">{{ title1 }}</view>
+        <view class="all_article_header_message">
+          <text style="color:#000">{{ title1 }}</text
+          >的{{title1 }}做法，共“<text style="color: #ffc000">{{
+            arrs.length
+          }}</text
+          >”个<text>{{ title1 }}</text
+          >相关菜谱
+        </view>
+      </view>
+    </view>
+    <view class="wrap">
+      <view class="inner">
+        <navigator wx:for="{{arrs}}" wx:key="index" style="margin-bottom:80rpx;display:block;width:670rpx">
+          <view class="chunk chunk_font1">
+            <view class="name one_line">{{ item.title }}</view>
+            <view class="info">
+              <view class="author"  class="font_size">
+                {{ item.author }}
+              </view>
+              <view class="fr">
+                <view class="font14 color999 h1">
+                  <image  src="https://m.ecook.cn/resources/m/images/view.png"  class="item_img"></image>
+                </view>
+                <view class="font14 color999 mright20 h2">{{ item.browse }}</view>
+                <view class="font14 color999 font15 h3">
+                  <image src="https://m.ecook.cn/resources/m/images/like.png"   mode class="item_img1"></image>
+                </view>
+                <view class="font14 color999 mright20 h4">{{ item.count }}</view>
+              </view>
+            </view>
+          </view>
+            <view class="img_bar">
+              <image
+                src="{{item.img}}"
+              ></image>
+            </view>
+            <view class="content">{{ item.content}}</view>
+          </navigator>
+      </view>
+    </view>
+</view>

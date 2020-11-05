@@ -1,0 +1,152 @@
+/* pages/template/template.wxss */
+.header{
+  margin-bottom: 20rpx;
+}
+.ecook_logo {
+  max-width: 1500rpx;
+  width: 100%;
+  height: 90rpx;
+  margin-top: 5rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;
+}
+.logo {
+  margin: 0 0 0 24rpx;
+  height: 100%;
+  position: relative;
+}
+.cook {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90rpx;
+}
+.cook-img {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 16rpx;
+}
+.net-cook {
+  font-size: 36rpx;
+   color: #333333;
+  font-weight: bold;
+   margin-left: 58rpx;
+   display:inline-block;
+   height: 90rpx;
+   line-height: 90rpx;
+   width: 200rpx;
+   text-align: left;
+   /* position: absolute;
+   top:.0.2rem; */
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+.user_nav_submenu {
+  float: right;
+  width: 282rpx;
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.user_action {
+  float: right;
+  font-size: 14px;
+  position: relative;
+}
+.user_action_a:hover{
+ color: #ffc000 !important;
+}
+.user_action_a {
+  font-size: 14px;
+  color: #ffc000;
+  height: 28rpx;
+  line-height: 28rpx;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+  display: inline-block;
+  border-right: 1rpx solid #333333 !important;
+  position: relative;
+  line-height: 1;
+}
+.color333 {
+  color: #333333 !important;
+}
+.search
+{   
+    height: 72rpx;
+    line-height: 92rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    border-radius: 36rpx;
+    box-shadow: 0 6rpx 40rpx #DCDCDC;
+    position: relative;
+}
+.search_content{
+    width: 30rpx;
+    height: 72rpx;
+    line-height: 68rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-img{
+    width: 30rpx;
+    height: 32rpx;
+    display: inline-block;
+    margin-right: 16rpx;
+    margin-left: 16rpx;
+    vertical-align: middle;
+}
+.search_input{
+    width: calc(100% - 90rpx);
+    width:calc(100% - 90rpx);
+    height: 68rpx;
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 62rpx;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 24rpx;
+    text-align: left;
+
+}
+.search_button{
+  background: #E6E6E6;
+    text-align: center;
+    position:absolute;
+    top: 0;
+    right:0;
+    width: 120rpx;
+    height: 72rpx;
+    color: #6B6B6B;
+    font-size: 13px;
+    line-height: 72rpx;
+    border-radius: 0px 36rpx 36rpx 0px;
+    cursor: pointer;
+}
+.nav{
+  background-color: #FFC000 !important;
+  min-width: 375rpx;
+  overflow: auto;
+  z-index: 100;
+}
+.tab{
+  color: #333 !important;
+}
+.active1{
+  color: #fff !important;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

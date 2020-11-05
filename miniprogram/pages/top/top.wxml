@@ -1,0 +1,66 @@
+<!--pages/top/top.wxml-->
+<import src="./top.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+<tel></tel>
+<view class="all">
+  <view class="wrap" style="margin-bottom:200rpx">
+      <view class="inner">
+        <navigator wx:for="{{arrs1}}" wx:key="index" style="margin-bottom:80rpx;display:block;width:670rpx">
+          <view class="chunk chunk_font1">
+            <view class="name one_line">{{ item.title }}</view>
+            <view class="info">
+              <view class="author"  class="font_size">
+                {{ item.author }}
+              </view>
+              <view class="fr">
+                <view class="font14 color999 h1">
+                  <image  src="https://m.ecook.cn/resources/m/images/view.png"  class="item_img"></image>
+                </view>
+                <view class="font14 color999 mright20 h2">{{ item.browse }}</view>
+                <view class="font14 color999 font15 h3">
+                  <image src="https://m.ecook.cn/resources/m/images/like.png"   mode class="item_img1"></image>
+                </view>
+                <view class="font14 color999 mright20 h4">{{ item.count }}</view>
+              </view>
+            </view>
+          </view>
+            <view class="img_bar">
+              <video id="video" controls="controls" loop="loop" autoplay="autoplay" preload="auto" width="706rpx" heigth="400rpx" src="{{item.video}}" class="video">
+        </video>
+              <!-- <image
+                src="{{item.img}}"
+              ></image> -->
+            </view>
+            <view class="content">{{ item.content}}</view>
+          </navigator>
+      </view>
+    </view>
+    <view class="index" style="margin-top:60rpx">
+        <view class="box">
+            <view class="box1">
+              <text style="font-weight:600;color:#000;" class="text1">厨友评论</text>
+                <text class="text2">{{arrs.length}}条评论</text>
+                <!-- <text class="txt">条评论</text> -->
+                </view>
+            <view class="box2">
+                <view class="imglist">
+                    <image src="https://img.t.sinajs.cn/t5/style/images/face/male_180.png"></image>
+                </view>
+                <view class="inp">
+                    <textarea type="text" bindinput="test" value="{{msg}}"></textarea>
+                </view>
+              </view>
+            <view class="box3">
+               <button class="box3_one {{msg.length>0?'active':''}}" bindtap="send" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">发布</button>
+               </view>
+            <view class="box4"></view>
+             <view class="box5">最热评论</view>
+             <comment txt="{{arrs}}" txt1="{{openID}}" bindsendData="getData" com="{{avatarUrl}}" bindsendData1="getData1"></comment>
+              </view>
+</view>
+<!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+<image src="{{avatarUrl}}"></image> -->
+</view>
+</view>

@@ -1,0 +1,79 @@
+<!--pages/video/video.wxml-->
+<tel></tel>
+<view class="all">
+  <view class="video_header" wx:for="{{lists}}" wx:key="index">
+      <view class="font18" style="margin-bottom:10rpx">{{item.title}}
+      </view>
+      <view style="margin-top: 16rpxpx; line-height: 24rpx;">
+        <view class="video_author">{{item.author}}</view>
+        <view class="video_createtime">{{item.publish}}</view>
+      </view>
+      <view style="margin-top: 16rpx; line-height: 24rpx;display:flex">
+        <view class="font12 color999 lineHeight12">标签：</view>
+        <navigator class="font12 colorffc000 disinline lineHeight12">{{item.label1}}</navigator>
+        <navigator class="font12 colorffc000 mleft8 disinline lineHeight12">{{item.label2}}</navigator>
+      </view>
+    </view>
+    <view class="video_content" wx:for="{{lists}}" wx:key="index">
+        <video id="video" controls="controls" loop="loop" autoplay="autoplay" preload="auto" width="706rpx" heigth="400rpx" src="{{item.auto}}" class="video">
+        </video>
+        <view class="video_info">
+            <view>
+                <text class="video_info_text">{{item.com}}</text>
+                <text class="video_info_text mleft16">{{item.count}}</text>
+            </view>
+            <view class="video_desc" style="margin-top: 32rpx;">{{item.content}}</view>
+        </view>
+    </view>
+    <view class="gus_you_like">
+    <view class="h2">向你推荐</view>
+    <navigator style="margin-top:32rpx;">
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264454857.jpg!wd320" alt="㊙️奶香四溢|超长拉丝的芝士焗红薯" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">㊙️奶香四溢|超长拉丝的芝士焗红薯</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img dujia">
+                <image src="https://pic.ecook.cn/web/264330513.jpg!wd320" alt="青椒炒皮蛋" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">青椒炒皮蛋</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264390835.jpg!wd320" alt="糖醋菠萝排骨" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">糖醋菠萝排骨</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img dujia">
+                <image src="https://pic.ecook.cn/web/264446480.jpg!wd320" alt="爆炒田螺肉" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">爆炒田螺肉</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264292952.jpg!wd320" alt="红糖麻糍" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:0rpx">红糖麻糍</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264320654.jpg!wd320" alt="韭菜炒虾仁" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:0rpx">韭菜炒虾仁</view>
+        </view>
+    </navigator>
+</view>
+</view>

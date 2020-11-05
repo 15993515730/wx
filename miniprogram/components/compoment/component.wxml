@@ -1,0 +1,20 @@
+<!--components/compoment/component.wxml-->
+<view class="comment">
+  <view wx:if="{{txt.length>0}}" class="ul">
+                 <view wx:for="{{txt}}" class="li" wx:key="index">
+                     <view class="box6">
+                     <image src="{{item.img}}" class="imfg"></image>
+                    <view class="it">{{item.component}}</view>
+                     </view>
+                <view class="box6_one" style="margin-left:180rpx">
+                  <view class="btn_item">
+                    <text bindtap="bt" data-x="{{index}}" data-y="{{item.num}}" style="font-size:32rpx;color:#333">点赞量</text>
+                   <text>{{item.num}} </text>
+                  </view>
+                 <view  class="btn" bindtap="del" data-z="{{index}}" style="color:#696969;font-size:32rpx;background-color:#ccc;margin-left:60rpx;height:42rpx;line-height:42rpx;width:84rpx;text-align:center;border-radius:4rpx">删除</view>
+                      </view>
+                    </view>
+                  </view>
+             <view class="p" wx:else>暂无评论</view>
+</view>
+

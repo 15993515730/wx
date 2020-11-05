@@ -1,0 +1,63 @@
+<!--pages/lists/lists.wxml-->
+<tel></tel>
+<view class="all">
+  <view class="all_article_header">
+    <view class="all_article_header_card" style="height: 176rpx;">
+        <view class="disinline all_header_card_h1" style="padding-right: 0rpx;">与</view>
+        <view class="disinline all_header_card_h1" id="listtitle" style="color:red !important;padding-left:0rpx;padding-right: 0rpx;">{{msg}}</view>
+        <view class="disinline all_header_card_h1" style="padding-left:0rpx;padding-right: 0rpx; width: 200rpx">相关搜索</view>
+        <view class="all_article_header_message"><text id="keyword">{{msg}}</text>的家常做法，共“<text style="color: #FFC000;">0</text>”个<text>{{msg}}</text>相关菜谱</view>
+    </view>
+    </view>
+    <view class="gus_you_like">
+    <view class="h2">向你推荐</view>
+    <navigator style="margin-top:32rpx;">
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264454857.jpg!wd320" alt="㊙️奶香四溢|超长拉丝的芝士焗红薯" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">㊙️奶香四溢|超长拉丝的芝士焗红薯</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img dujia">
+                <image src="https://pic.ecook.cn/web/264330513.jpg!wd320" alt="青椒炒皮蛋" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">青椒炒皮蛋</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264390835.jpg!wd320" alt="糖醋菠萝排骨" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">糖醋菠萝排骨</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img dujia">
+                <image src="https://pic.ecook.cn/web/264446480.jpg!wd320" alt="爆炒田螺肉" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:48rpx;">爆炒田螺肉</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264292952.jpg!wd320" alt="红糖麻糍" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:0rpx">红糖麻糍</view>
+        </view>
+    </navigator>
+    <navigator>
+        <view class="item">
+            <view class="img">
+                <image src="https://pic.ecook.cn/web/264320654.jpg!wd320" alt="韭菜炒虾仁" mode></image>
+            </view>
+            <view class="title" style="margin-bottom:0rpx">韭菜炒虾仁</view>
+        </view>
+    </navigator>
+</view>
+</view>

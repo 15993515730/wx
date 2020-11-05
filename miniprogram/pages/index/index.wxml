@@ -1,0 +1,312 @@
+<!--index.wxml-->
+<import src="./index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+<tel></tel>
+<view>
+<van-tabs sticky swipeable  active="{{ active }}" type="line" nav-class="nav" tab-active-class="active1" color="#fff" tab-class="tab" >
+  <van-tab title="首页">
+    <view style="margin-top:20rpx">
+  <!-- 
+indicator-dots='true':是否显示面板指示点,默认为false
+indicator-color='red':指示点颜色
+indicator-active-color='yellow':当前选中的指示点颜色
+autoplay='true':是否自动切换
+ -->
+  <swiper indicator-dots='true' indicator-color="#fff" indicator-active-color='#FFC000' autoplay='true'>
+    <navigator url="../photo/photo?type_id=1">
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/264501639.jpg!wh882' mode></image>
+      <view class="slide-shade">
+                <text class="swiper_word">节瓜汤【养颜素汤】</text>
+      </view>
+    </swiper-item>
+  </navigator>
+  <navigator url="../photo/photo?type_id=2">
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/264495666.jpg!wh882' mode></image>
+      <view class="slide-shade">
+                <text class="swiper_word">麻辣花蛤</text>
+      </view>
+    </swiper-item>
+  </navigator>
+  <navigator url="../photo/photo?type_id=3">
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/264501724.jpg!wh882' mode></image>
+      <view class="slide-shade">
+                <text class="swiper_word">西红柿打卤粉</text>
+      </view>
+    </swiper-item>
+  </navigator>
+  <navigator url="../photo/photo?type_id=4">
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/264501254.jpg!wh882' mode></image>
+      <view class="slide-shade">
+                <text class="swiper_word">小米海参粥➕稻花麦浪入画来</text>
+      </view>
+    </swiper-item>
+  </navigator>
+  <navigator url="../photo/photo?type_id=5">
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/264501572.jpg!wh882' mode></image>
+      <view class="slide-shade">
+                <text class="swiper_word">山药炒肉片</text>
+      </view>
+    </swiper-item>
+  </navigator>
+  </swiper>
+  <view class="navs">
+      <view class="nav_content">
+        <navigator class="nav_item">
+          <image class="nav_img" alt="菜谱大全" src="https://m.ecook.cn/resources/m/images/1.png"></image>
+          <text class="font14 nav_text">
+         菜谱大全
+          </text>
+        </navigator>
+        <navigator class="nav_item">
+          <image class="nav_img" alt="家常菜谱" src="https://m.ecook.cn/resources/m/images/2.png"></image>
+          <text class="font14 nav_text">
+            家常菜谱
+          </text>
+        </navigator>
+        <navigator class="nav_item">
+          <image class="nav_img" alt="健康饮食" src="https://m.ecook.cn/resources/m/images/3.png"></image>
+          <text class="font14 nav_text">
+           健康饮食
+          </text>
+        </navigator>
+        <navigator class="nav_item">
+                <image class="nav_img" alt="孕婴专区" src="https://m.ecook.cn/resources/m/images/4.png"></image>
+                <text class="font14 nav_text">
+               孕婴专区
+                </text>
+        </navigator>
+      </view>
+    </view>
+  <view class="navs_item">
+    <view class="title_h2 font18">今天适合吃什么？</view>
+    <view class="dailyRecipe recipeList">
+            <navigator  class="recipe_content" wx:for="{{lists}}" wx:key="index" url="../detail/detail?id={{item.title}}">
+                <image src="{{item.img}}" mode></image>
+                <text class="recipe_text font16">{{item.title}}</text>
+            </navigator>
+          </view>
+        </view>
+</view>
+<view class="navs_item">
+    <view class="title_h2 font18">最新菜谱</view>
+    <view class="dailyRecipe recipeList">
+            <navigator  class="recipe_content" wx:for="{{newList}}" wx:key="index" url="../detail/detail?id={{item.id}}">
+                <image src="{{item.img}}" mode></image>
+                <text class="recipe_text font16">{{item.title}}</text>
+            </navigator>
+          </view>
+</view>
+<view class="navs_item">
+    <view class="title_h2 font18">最热菜谱</view>
+    <view class="dailyRecipe recipeList">
+            <navigator  class="recipe_content" wx:for="{{hotList}}" wx:key="index" url="../detail/detail?id={{item.id}}">
+                <image src="{{item.img}}" mode></image>
+                <text class="recipe_text font16">{{item.title}}</text>
+            </navigator>
+          </view>
+</view>
+  </van-tab>
+  <van-tab title="菜谱大全">
+    <view class="all" style="margin-top:20rpx">
+      <view class="hot_class">
+              <view>
+                <view class="h3">热门分类</view>
+                <view class="ul">
+                    <view class="li" wx:for="{{lists1[0]}}" wx:key="index">
+                        <navigator class="a" url="../msg/msg?title={{item.title}}&id={{item._id}}">
+                          <image class="img" src="{{item.images}}" mode></image>
+                            <view class="tips">
+                                <view class="sp">{{item.title}}</view>
+                            </view>
+                        </navigator>
+                      </view>
+                </view>
+              </view>
+              <view>
+                <view class="h3">一日三餐</view>
+                <view class="ul">
+                    <view class="li" wx:for="{{lists1[1]}}" wx:key="index">
+                        <navigator class="a">
+                          <image class="img" src="{{item.images}}" mode></image>
+                            <view class="tips">
+                                <view class="sp">{{item.title}}</view>
+                            </view>
+                        </navigator>
+                      </view>
+                </view>
+              </view>
+              <view>
+                <view class="h3">家常菜谱</view>
+                <view class="ul">
+                    <view class="li" wx:for="{{lists1[2]}}" wx:key="index">
+                        <navigator class="a">
+                          <image class="img" src="{{item.images}}" mode></image>
+                            <view class="tips">
+                                <view class="sp">{{item.title}}</view>
+                            </view>
+                        </navigator>
+                      </view>
+                </view>
+              </view>
+              <view>
+                <view class="h3">主食小吃</view>
+                <view class="ul">
+                    <view class="li" wx:for="{{lists1[3]}}" wx:key="index">
+                        <navigator class="a">
+                          <image class="img" src="{{item.images}}" mode></image>
+                            <view class="tips">
+                                <view class="sp">{{item.title}}</view>
+                            </view>
+                        </navigator>
+                      </view>
+                </view>
+              </view>
+              <view>
+                <view class="h3">时令美食</view>
+                <view class="ul">
+                    <view class="li" wx:for="{{lists1[4]}}" wx:key="index">
+                        <navigator class="a">
+                          <image class="img" src="{{item.images}}" mode></image>
+                            <view class="tips">
+                                <view class="sp">{{item.title}}</view>
+                            </view>
+                        </navigator>
+                      </view>
+                </view>
+              </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="头条">
+    <view class="all" style="margin-top:20rpx;">
+      <view style="border-radius:8rpx">
+      <swiper indicator-dots='true' indicator-color="#fff" indicator-active-color='#FFC000' autoplay='true'>
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/256553839.jpg!wh882' mode style="border-radius:8rpx"></image>
+      <view class="slide-shade">
+                <text class="swiper_word">新叶古村觅食游记</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/263585247.jpg!wh882' mode  style="border-radius:8rpx"></image>
+      <view class="slide-shade">
+                <text class="swiper_word">法兰西牛油果奶酪水果塔</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/259682561.jpg!wh882' mode  style="border-radius:8rpx"></image>
+      <view class="slide-shade">
+                <text class="swiper_word">汤匙、茶匙的用量你了解吗？</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/263366243.jpg!wh882' mode  style="border-radius:8rpx"></image>
+      <view class="slide-shade">
+                <text class="swiper_word">香格里拉的牦牛偷走了我们的韭菜，我们赶紧吃碗牛肉米线压压惊</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://pic.ecook.cn/web/262556538.jpg!wh882' mode  style="border-radius:8rpx"></image>
+      <view class="slide-shade">
+                <text class="swiper_word">充满竹子清香的几道菜</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="toutiaoList">
+         <view class="toutiaoInfo" wx:for="{{authors}}" wx:key="index">
+             <navigator class="toutiaoTitle" url="../top/top?id={{item._id}}&count={{item.browse}}">{{item.title}}</navigator>
+             <view class="toutiaoDetail">
+                 <text class="font12 color999" style="margin-left:20rpx">作者: </text><text class="toutiaoAuthor font12 color999">{{item.author}}</text>
+                 <text class="font12 color999" style="margin-left:20rpx">浏览量: </text><text class="font12 color999">{{item.browse}}</text>
+                 <text class="font12 color999" style="margin-left:20rpx">点赞量: </text><text class="font12 color999">{{item.count}}</text>
+             </view>
+             <navigator class="toutiaoPic disblock">
+                 <image class="toutiaoBanner" src="{{item.img}}"></image>
+             </navigator>
+             <view class="toutiaoDescription">{{item.share}}</view>
+
+         </view>
+    </view>
+    <view class="pageContent" style="height: auto;" id="page" data="1" alt="810">
+       <view class="pageBtn"  style="width: 422rpx;height: 80rpx;border-radius: 40rpx;margin:auto" bindtap="cli">下一页</view>
+       <view style="font-weight: 100;font-size: 24rpx;color: #ccc;margin-top: 16rpx;text-align: center;">({{page}}/5)</view>
+   </view>
+    </view>
+  </van-tab>
+  <van-tab title="主题">
+    <view class="all" style="margin-top:20rpx;">
+      <view class="theme_header">
+            <view class="theme_title">国内领先的菜谱美食大全</view>
+        </view>
+        <view class="theme_content">
+            <view class="theme_title" style="margin-top: 48rpx;">推荐主题</view>
+            <view style="margin-top: 48rpx;font-size: 0;" class="theme_item">
+                <navigator  class="theme_li" wx:for="{{typic}}" wx:key="index" url="../theme/theme?title={{item.title}}">{{item.title}}</navigator>
+            </view> 
+        </view>
+            <view class="theme_content">
+            <view class="theme_title" style="margin-top: 48rpx;">最新主题</view>
+            <view style="margin-top: 48rpx;font-size: 0;" class="theme_item">
+                <navigator  class="theme_li" wx:for="{{news}}" wx:key="index" url="../theme/theme?title={{item.title}}">{{item.title}}</navigator>
+            </view> 
+            </view>
+            <view class="theme_content">
+            <view class="theme_title" style="margin-top: 48rpx;">热门主题</view>
+            <view style="margin-top: 48rpx;font-size: 0;" class="theme_item">
+                <navigator  class="theme_li" wx:for="{{hot}}" wx:key="index" url="../theme/theme?title={{item.title}}">{{item.title}}</navigator>
+            </view> 
+            </view>
+    </view>
+  </van-tab>
+  <van-tab title="视频">
+    <view class="all" style="margin-top:20rpx;">
+      <view class="all_tupian_top">
+      <view class="all_tupian_title">高清菜谱、美食视频大全</view>
+      <view class="all_tupian_text" style="margin-top: 32rpx">
+        目前在线<text style="color: #ffc000"> 1807+ </text>个美食视频
+      </view>
+    </view>
+    <view class="wrap" style="padding: 48rpx 0;">
+      <view class="dobule_list">
+        <view class="all_tupian_title">精选美食视频</view>
+        <navigator  class="dobule_recipe"  style="margin-top: 48rpx;position: relative;" wx:for="{{select}}" wx:key="index" url="../video/video?id={{item.title}}">
+            <image class="dobule_img" style="height: auto;" src="{{item.img}}" ></image>
+            <view class="durationStyle">{{item.time}}</view>
+            <view class="titlefont16">{{item.title}}</view>
+        </navigator>
+    </view>
+    </view>
+    <view class="wrap" style="padding: 48rpx 0;">
+      <view class="dobule_list">
+        <view class="all_tupian_title">精选美食视频</view>
+        <navigator  class="dobule_recipe"  style="margin-top: 48rpx;position: relative;" wx:for="{{cate}}" wx:key="index">
+            <image class="dobule_img" style="height: auto;" src="{{item.img}}" ></image>
+            <view class="durationStyle">{{item.time}}</view>
+            <view class="titlefont16">{{item.title}}</view>
+        </navigator>
+    </view>
+    </view>
+    <view class="wrap" style="padding: 48rpx 0;">
+      <view class="dobule_list">
+        <view class="all_tupian_title">精选美食视频</view>
+        <navigator  class="dobule_recipe"  style="margin-top: 48rpx;position: relative;" wx:for="{{newcate}}" wx:key="index">
+            <image class="dobule_img" style="height: auto;" src="{{item.img}}" ></image>
+            <view class="durationStyle">{{item.time}}</view>
+            <view class="titlefont16">{{item.title}}</view>
+        </navigator>
+    </view>
+    </view>
+    </view>
+  </van-tab>
+</van-tabs>
+<van-toast id="van-toast" position="middle" />
+</view>
+</view>
+

@@ -1,0 +1,54 @@
+<!--pages/photo/photo.wxml-->
+<import src="./photo.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+<tel></tel>
+<view class="all">
+  <view class="recipe_banner">
+        <image class="recipe_banner_img" src="{{lists1[0].img}}" alt="" mode></image>
+    </view>
+    <view class="main">
+      <view class="recipe_detail_content">
+            <view class="title_h1 font22 mtop0"> {{lists1[0].title}}</view>
+            <view class="recipe_desc font14">{{lists1[0].content}}</view>
+            <view class="recipe_author_content">
+                <navigator class="disinline">
+                    <image class="recipe_author_img" src="{{lists1[0].img1}}"></image></navigator>
+                <view class="recipe_author_name_content">
+                    <view class="font16 recipe_author_name"><navigator>{{lists1[0].name}}</navigator></view>
+                    <view class="recipe_author_sex">
+                        <image alt="" src="{{lists1[0].img2}}" class="recipe_author_sex_img"></image>
+                    </view>
+                  </view>
+                <view class="recipe_author_care" bindtap="attention">{{guanzhu}}</view>
+                </view>
+            <view class="recipe_species">
+                <view class="species">
+                    <view class="font18 species_num">{{lists1[0].menu}}</view>
+                    <view class="font14 species_text">菜谱</view>
+                </view>
+
+                <view class="species">
+                    <view class="font18 species_num">{{lists1[0].fans}}</view>
+                    <view class="font14">粉丝</view>
+                </view>
+                <view class="species">
+                    <view class="font18 species_num">{{lists1[0].foucs}}</view>
+                    <view class="font14" bindtap="click">关注</view>
+                </view>
+              </view>
+    </view>
+    <view class="titleview font16">食材</view>
+            <view class="material">
+                <view class="material_ul">
+                        <view class="material_li" wx:for="{{lists2}}" wx:key="index">
+                          <text class="material_left">{{item.title}}</text> 
+                          <text class="material_right">{{item.title2}}</text>
+                        </view>   
+                </view>
+              </view>
+</view>
+</view>
+</view>
+<!-- </view>
+</view> -->

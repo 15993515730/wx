@@ -1,0 +1,109 @@
+<tel></tel>
+<view class="all">
+  <view class="theme_inner">
+
+<view class="theme_detail_header">
+    <view class="theme_detail_top">
+        <view class="theme_detail_title">{{msg}}</view>
+        <view class="theme_detail_desc">{{msg}}主题包括下午茶菜谱，图片，头条，问答</view>
+    </view>
+</view>
+<view style="padding: 0 32rpx;">
+<!--菜谱-->
+<view class="theme_caipu_content" style="margin-top: 48rpx">
+    <view class="theme_content_title">{{msg}}菜谱</view>
+    
+        <navigator style="margin-bottom: 64rpx">
+            <view class="chunk">
+                <view class="name one_line">火龙果法式松饼—高营养价值，宝宝美味高颜值下午茶！10M+</view>
+                <view class="info">
+                    <view class="author" style="font-size: 14px;color: #999999;">作者：窝小芽</view>
+                    <view class="fr widthAuto disinline">
+                        <text class="font14 color999" style="margin-right: 16rpx;">收藏：1273</text>
+                        <text class="font14 color999 ">评论：31</text>
+                    </view>
+                </view>
+                <view class="img">
+                    <image src="https://pic.ecook.cn/web/233529228.jpg!wd780"  alt="火龙果法式松饼—高营养价值，宝宝美味高颜值下午茶！10M+"></image>
+                </view>
+                <view class="content">火龙果营养价值很高
+含丰富的钙、磷、铁等矿物质和维他命族群
+还有一般植物少有的植物性蛋白、花青素和较多的水溶性膳食纤维
+
+而松饼的主要特点就是松软可口
+要达到比较好的松软度
+一般会用两种办法
+打发蛋白霜 或 加泡打粉
+我们采用的当然是打发蛋</view>
+                </view>
+        </navigator>
+    
+    
+        <navigator style="margin-bottom: 64rpx">
+            <view class="chunk">
+                <view class="name one_line">无水纸杯蛋糕</view>
+                <view class="info">
+                    <view class="author" style="font-size: 28rpx;color: #999999;">作者：凡妈小厨</view>
+                    <view class="fr widthAuto disinline">
+                        <text class="font14 color999" style="margin-right: 16rpx;">收藏：432</text>
+                        <text class="font14 color999 ">评论：904</text>
+                    </view>
+                </view>
+                <view class="img">
+                    <image src="https://pic.ecook.cn/web/257230527.jpg!wd780"  alt="下午茶～无水纸杯蛋糕"></image>
+                </view>
+                <view class="content">这个纸杯蛋糕其实就是老式蛋糕的配方，口感比较棉实。今天我做的温度高了一点点，有点开裂了，不过我喜欢这种口感的，宝宝也很喜欢，当下午茶很不错哟～</view>
+              </view>
+        </navigator>
+    
+    
+        <navigator style="margin-bottom:64rpx">
+            <view class="chunk">
+                <view class="name one_line">甜美的下午茶之蓝莓土豆球</view>
+                <view class="info">
+                    <view class="author" style="font-size: 14px;color: #999999;">作者：皓月天空3331</view>
+                    <view class="fr widthAuto disinline">
+                        <text class="font14 color999" style="margin-right: 8px;">收藏：348</text>
+                        <text class="font14 color999 ">评论：1111</text>
+                    </view>
+                </view>
+                <view class="img dujia">
+                    <image src="https://pic.ecook.cn/web/256453874.jpg!wd780"  alt="甜美的下午茶之蓝莓土豆球"></image>
+                </view>
+                <view class="content">土豆的蛋白质比大豆还好，最接近动物蛋白。土豆所含的钾可预防脑血管破裂。它所含的蛋白质和维生素C，均为苹果的10倍，营养价值相当于苹果的3.5倍。土豆利于减肥、防中风，还能和胃健脾，对胃溃疡、习惯性便秘、热咳及皮肤湿疹也有治疗功效。
+土豆可以做出很多的美食，但是最健康营养的做法就是无油吃法。奶香四溢的蓝莓土豆球就是无油无糖、非常健康的吃法，特别适合作餐桌上的小甜品或者下午茶。</view>
+                </view>
+        </navigator>
+</view>
+
+<!--图片-->
+<view class="theme_tupian_content" style="margin-top: 80rpx">
+    <view class="theme_content_title">下午茶图片</view>
+    <navigator class="theme_tupian_info" style="margin-bottom: 32rpx;">
+        <image class="theme_tupian_info_pic" src="https://pic.ecook.cn/web/264021375.jpg!m3"></image>
+        <view class="theme_tupian_info_title">
+           <view class="theme_tupian_info_name">蛋黄派</view>
+        </view>
+    </navigator>
+    <navigator class="theme_tupian_info" style="margin-bottom: 32rpx;" >
+        <image class="theme_tupian_info_pic" src="https://pic.ecook.cn/web/264028285.jpg!m3"></image>
+        <view class="theme_tupian_info_title">
+           <view class="theme_tupian_info_name">低脂低糖｜日式豆腐戚风蛋糕</view>
+        </view>
+    </navigator>
+    <navigator class="theme_tupian_info" style="margin-bottom: 32rpx;" >
+        <image class="theme_tupian_info_pic" src="https://pic.ecook.cn/web/264006314.jpg!m3"></image>
+        <view class="theme_tupian_info_title">
+           <view class="theme_tupian_info_name">古早蛋糕</view>
+        </view>
+    </navigator>
+    <navigator class="theme_tupian_info" style="margin-bottom: 32rpx;" >
+        <image class="theme_tupian_info_pic" src="https://pic.ecook.cn/web/264005499.jpg!m3"></image>
+        <view class="theme_tupian_info_title">
+           <view class="theme_tupian_info_name">冬至美食  酒酿汤圆</view>
+        </view>
+    </navigator>
+</view>
+</view>
+</view>
+</view>

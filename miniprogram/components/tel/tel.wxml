@@ -1,0 +1,26 @@
+<!--components/tel/tel.wxml-->
+<view id="app">
+  <view class="header">
+  
+    <view class="ecook_logo">
+    
+      <view class="logo">
+        <image src="https://m.ecook.cn/resources/m/images/ecook_logo.png" class="cook-img"></image>
+        <text class="net-cook">网上厨房</text>
+      </view>
+      <!-- <view class="user_nav_submenu"> 
+                <view class="user_action">
+                    <navigator url="../lists/lists" class=" user_action_a color333 ">登录</navigator>
+                    <navigator  url="../lists/lists" class="user_action_a color333">注册</navigator>
+                    </view>
+                  </view>  -->
+    </view>
+    <view class="search">
+  <view class="search_content">
+    <image src="https://m.ecook.cn/resources/m/images/icon_search.png" alt="" class="search-img"></image>
+  </view>
+  <input type="text" class="search_input" placeholder="搜菜谱，食材" bindconfirm="inputTyping" bindinput="send" value="{{value}}"/>
+    <text class="search_button" bindtap="ipt">搜索</text>
+ </view>
+  </view>
+</view>

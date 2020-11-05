@@ -1,0 +1,4 @@
+<!--pages/ask/ask.wxml-->
+<import src ="../template/template.wxml"/>
+<template is="msgItem"/>
+11111

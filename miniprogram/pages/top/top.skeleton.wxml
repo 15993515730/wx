@@ -1,0 +1,91 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/11/4 下午7:31:50 
+使用方法：
+在 C:\Users\Administrator\Desktop\cloudFile\miniprogram\pages\top\top.wxml 引入模板
+
+```
+<import src="top.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\Users\Administrator\Desktop\cloudFile\miniprogram\pages\top\top.wxss 中引入样式
+```
+@import "./top.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="sk-container">
+      <view is="components/tel/tel">
+        <view id="app">
+          <view class="tel--header">
+            <view class="tel--ecook_logo">
+              <view class="tel--logo">
+                <image class="tel--cook-img sk-image"></image>
+                <text class="tel--net-cook sk-transparent sk-text-30-0000-475 sk-text sk-image">网上厨房</text>
+              </view>
+            </view>
+            <view class="tel--search">
+              <view class="tel--search_content">
+                <image class="tel--search-img sk-image"></image>
+              </view>
+              <view class="tel--search_input sk-image" placeholder="搜菜谱，食材" type="text" value="true"></view>
+              <text class="tel--search_button sk-transparent sk-text-31-9444-571 sk-text sk-image" style="background-position-x: 50%;">搜索</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="all">
+        <view class="wrap" style="margin-bottom:100px">
+          <view class="inner">
+            <navigator style="margin-bottom:40px;display:block;width:335px">
+              <view class="chunk chunk_font1">
+                <view class="name one_line sk-transparent sk-text-14-2857-728 sk-text sk-image">一分钟学会养乐多的高逼格喝法，论如何优雅的喝一杯养乐多！</view>
+                <view class="info">
+                  <view class="font_size sk-transparent sk-text-14-2857-851 sk-text sk-image">
+                    葱油饼不带葱
+                  </view>
+                  <view class="fr">
+                    <view class="font14 color999 h1">
+                      <image class="item_img sk-image"></image>
+                    </view>
+                    <view class="font14 color999 mright20 h2 sk-transparent sk-text-13-1579-316 sk-text sk-image">3354</view>
+                    <view class="font14 color999 font15 h3">
+                      <image mode="true" class="item_img1 sk-image"></image>
+                    </view>
+                    <view class="font14 color999 mright20 h4 sk-transparent sk-opacity">0</view>
+                  </view>
+                </view>
+              </view>
+              <view class="img_bar">
+                <view autoplay="true" class="video sk-image" controls="true" loop="true" src="https://video.ecook.xiaochushuo.com/b09696b498214e25b38916649d820dc8.mp4" id="video" unit-id="true"></view>
+              </view>
+              <view class="content"></view>
+            </navigator>
+          </view>
+        </view>
+        <view class="index" style="margin-top:30px">
+          <view class="box" style="border: none;">
+            <view class="box1">
+              <text class="text1 sk-transparent sk-text-2-9412-583 sk-text sk-image" style="font-weight:600;color:#000;">厨友评论</text>
+              <text class="text2 sk-transparent sk-text-2-9412-43 sk-text sk-image">2条评论</text>
+            </view>
+            <view class="box2">
+              <view class="imglist">
+                <image class="sk-image"></image>
+              </view>
+              <view class="inp" style="border: none;">
+                <view value="true" class="sk-image"></view>
+              </view>
+            </view>
+            <view class="box3">
+              <button class="box3_one sk-transparent sk-button sk-pseudo sk-pseudo-circle" open-type="getUserInfo">发布</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

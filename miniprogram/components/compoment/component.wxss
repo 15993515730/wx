@@ -1,0 +1,158 @@
+/* components/compoment/component.wxss */
+.index{
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 100%;
+  margin: 0rpx auto;
+  border: 2rpx solid #ccc;
+  border-top: 4rpx solid #ff6700;
+
+}
+
+.box1 {
+  width: 95%;
+  height: 55rpx;
+  padding: 10rpx 0 15rpx;
+  line-height: 30rpx;
+  box-sizing: border-box;
+  background: url('https://n.sinaimg.cn/default/7919a7ba/20170830/bg.png') no-repeat;
+  background-position: 0 -950rpx;
+  /* display: flex; */
+}
+/* .txt{
+  color: #000;
+} */
+.box1 text{
+ display: inline-block;
+ margin-left: 530rpx;
+ color: #c00 !important;
+}
+
+.box1 text:nth-child(2) {
+  color: #c00 !important;
+  display: inline-block;
+}
+
+.box1 text:nth-child(1) {
+  color: #333;
+}
+
+.box2 {
+  width: 95%;
+  display: flex;
+}
+
+.imglist {
+  width: 126rpx;
+  height: 135rpx;
+}
+
+.imglist image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin: 2rpx auto;
+}
+.inp{
+  width: 500rpx;
+  height: 145rpx;
+  border: 1px solid #ccc;
+  border-radius: 5rpx;
+}
+.inp input{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding:10rpx 8rpx;
+  box-sizing: border-box;
+}
+.box3{
+  width: 95%;
+  height: 64rpx;
+  padding: 20rpx 0 18rpx 492rpx;
+  box-sizing: border-box;
+}
+.box3_one{
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color:#ccc;
+  text-align: center;
+  color: #696969;
+  border-radius: 5rpx;
+}
+.box4{
+  width:100%;
+  height: 1rpx;
+  background-color: #ccc;
+}
+.box5{
+  width: 100%;
+  height: 48rpx;
+  background-color: #e5e5e5;
+  font-weight: 600;
+  line-height: 48rpx;
+  color: #ff6700;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.ul .li{
+  width: 100%;
+  height: 111rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding-left: 20rpx;
+  padding-top: 30rpx;
+  padding-right: 32rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.box6{
+  display: flex;
+}
+.imfg{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.it{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+  width: 100rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box6_one{
+  height: 26rpx;
+  text-align: right;
+  width: 300rpx;
+  display: flex;
+}
+button{
+  outline: none;
+  border: none;
+  color: #696969;
+  background-color:#ccc;
+  width: 50rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  border-radius: 4rpx;
+
+}
+.active{
+  background-color: #ff6700;
+}
+.p{
+  width: 100%;
+  height: 111rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding-left: 20rpx;
+  padding-top: 30rpx;
+  padding-right: 32rpx;
+  box-sizing: border-box; 
+}
